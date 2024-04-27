@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* ===== Сбрас стилий ===== */
+
+* {
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+}
+
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+aside,
+nav,
+footer,
+header,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	background-color: #07203f;
+}
+
+main {
+	flex: 1 1 auto;
+}
+
+body,
+html {
+	height: 100%;
+	scroll-behavior: smooth;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button {
+	background-color: transparent;
+	cursor: pointer;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+
+/* ===== Header ===== */
+
+.header {
+	padding: 55px 0;
+	border-bottom: 1px solid #ffffff;
+}
+
+.container {
+	max-width: 1440px;
+	margin: 0 auto;
+	padding: 0 135px;
+}
+.wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo {
+	display: block;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: 36px;
+	text-transform: uppercase;
+	color: #ffffff;
+}
+
+.list {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 40px;
+}
+
+.item {
+	position: relative;
+}
+
+a {
+	display: block;
+	font-family: 'Inter', sans-serif;
+	font-weight: 400;
+	font-size: 36px;
+	text-transform: uppercase;
+	color: #ffffff;
+}
+
+.link {
+	text-decoration: underline;
+}
+
+/* ===== About ===== */
+
+.about {
+	padding: 135px 0 150px;
+}
+
+.content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.content__left {
+	width: 620px;
+}
+.title {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 800;
+	font-size: 65px;
+	text-transform: uppercase;
+	color: #ffffff;
+	margin-bottom: 80px;
+}
+.subtitle {
+	font-family: 'Inter', sans-serif;
+	font-weight: 400;
+	font-size: 36px;
+	color: #ffffff;
+	margin-bottom: 80px;
+}
+.btn {
+	display: block;
+	background-color: #d9d9d9;
+	font-family: 'Inter', sans-serif;
+	font-weight: 700;
+	font-size: 40px;
+	color: #000000;
+	padding: 30px 75px;
+	border-radius: 60px;
+	text-align: center;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+.btn:hover {
+	background-color: #d9aa90;
+}
+
+.img {
+	width: 515px;
+	height: 515px;
+	border-radius: 50%;
+}
+
+/* ===== Possibilities ===== */
+
+.possibilities {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 135px 0 150px;
+	background-image: url('https://docmanagement.com.br/wp-content/uploads/2015/12/bigstock-Technology-background-from-se-67240435.jpg');
+}
+.heading {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 800;
+	font-size: 72px;
+	text-transform: uppercase;
+	color: #333333;
+	margin-bottom: 70px;
+	text-align: center;
+}
+.cards {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 58px;
+}
+.card {
+	width: 100%;
+	height: 100%;
+	border: 5px solid #d9aa90;
+}
+.card__img {
+	width: 100%;
+	height: 225px;
+	object-fit: cover;
+}
+.card__text {
+	padding: 40px 0;
+	background-color: #07203f;
+}
+.text {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 800;
+	font-size: 64px;
+	text-transform: uppercase;
+	text-align: center;
+	color: #ffffff;
+}
+
+.css {
+	border-color: #07203f;
+}
+.card__text-css {
+	background-color: #d9aa90;
+}
+
+/* =====  Product ===== */
+.product {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 135px 0 150px;
+}
+.heading__product {
+	color: #ffffff;
+}
+.my-project {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 135px;
+}
+.project {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 130px;
+}
+.project__scrin {
+	width: 540px;
+	height: 365px;
+}
+.project__img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.project__info {
+	width: 455px;
+}
+.project__text {
+	font-size: 48px;
+	text-transform: uppercase;
+	color: #d9d9d9;
+	margin-bottom: 20px;
+}
+.project__desc {
+	font-family: 'Inter', sans-serif;
+	font-weight: 400;
+	font-size: 36px;
+	color: #d9d9d9;
+}
+
+/* ===== Application =====  */
+
+.application {
+	display: flex;
+	align-items: center;
+	background-color: #eaded4;
+	padding: 135px 0 150px;
+}
+.application__form {
+	display: flex;
+	flex-direction: column;
+	width: 760px;
+	padding: 75px 65px;
+	background-color: #ffffff;
+}
+.form__btn {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 100px;
+}
+.input {
+	margin-bottom: 40px;
+	background-color: #eaded4;
+	padding: 25px 30px;
+}
+::placeholder {
+	color: black;
+}
+.button {
+	padding: 10px 25px;
+	background-color: #eaded4;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	font-size: 36px;
+	text-align: center;
+	color: #000000;
+}
+
+/* ===== Contact ===== */
+
+.contact {
+	padding: 135px 0 150px;
+	background-image: url('https://uchri.org/wp-content/uploads/2012/01/hex_banner.jpg');
+}
+.contact__block {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.block {
+	width: 350px;
+	height: 350px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 110px 25px 85px;
+	background-color: #07203f;
+}
+
+.block-telegram {
+	background-color: #d9aa90;
+}
+.block__text {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 800;
+	font-size: 48px;
+	text-transform: uppercase;
+	align-items: center;
+	color: #ffffff;
+	margin-bottom: 20px;
+}
+.block__link {
+	display: inline-block;
+	background-color: #d9d9d9;
+	padding: 15px 25px;
+	border-radius: 50px;
+}
+.github:hover {
+	background-color: #d9aa90;
+}
+.telegram:hover {
+	background-color: #07203f;
+}
+.phone:hover {
+	background-color: #d9aa90;
+}
+
+/* ===== Footer ===== */
+.footer {
+	padding: 55px 0;
+}
